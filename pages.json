@@ -1,0 +1,226 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/property/property",
+			"style": {
+				"navigationBarTitleText": "资产",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+					}
+			}
+		}
+	    ,{
+            "path" : "pages/bill/bill",
+            "style" : {
+				"navigationBarTitleText": "账单"
+			}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style": {
+				"navigationBarTitleText": "我的",
+            	"navigationStyle":"custom",
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/newsinfo/newsinfo",
+            "style" : {
+				"navigationBarTitleText": "资讯详情"
+			}
+        }
+        ,{
+            "path" : "pages/pay/pay",
+            "style" : {
+				"navigationBarTitleText": "充币"
+			}
+        }
+        ,{
+            "path" : "pages/workorder/workorder",
+            "style" : {
+				"navigationBarTitleText": "联系客服",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							 // 右边
+							 {
+								 "color":"#000000",								 
+								 "colorPressed":"#BBBBBB",
+								 "float":"right",
+								 "fontSize":"30px",
+								 "text":"+"
+							 }
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/addwork/addwork",
+            "style" : {
+				"navigationBarTitleText": "新增工单"
+			}
+        }
+        ,{
+            "path" : "pages/chat/chat",
+            "style" : {
+				"navigationBarTitleText": "工单详情"
+			}
+        }
+        ,{
+            "path" : "pages/share/share",
+            "style": {
+            	"navigationBarTitleText": "分享链接",
+            	"app-plus": {
+            		"titleNView": {
+            			 "titleNView": false //禁用原生导航栏
+            		}
+            	},
+            	"h5": {
+            		"titleNView": {
+            			"type": "transparent",
+            			"buttons": []
+            		}
+            	}
+            }
+        },{
+            "path" : "pages/nickname/nickname",
+				"style" : {
+					"navigationBarTitleText": "修改昵称",
+					"app-plus":{
+						"scrollIndicator":"none",
+						"bounce":"none",
+						"titleNView":{
+							"buttons":[
+								 // 右边
+								 {
+									 "color":"#4F84FF",								 
+									 "colorPressed":"#BBBBBB",
+									 "float":"right",
+									 "fontSize":"14px",
+									 "text":"完成"
+								 }
+							]
+						}
+					}
+			}
+        }
+        ,{
+            "path" : "pages/cipher/cipher",
+            "style" : {
+				"navigationBarTitleText": "修改密码"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+					}
+			   }
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style": {
+            	"navigationBarTitleText": "手机注册",
+            	"navigationStyle":"custom",
+            	"app-plus":{
+            		"titleNView":false
+            		}
+               }
+        }
+        ,{
+            "path" : "pages/forgetPasswd/forgetPasswd",
+            "style": {
+            	"navigationBarTitleText": "忘记密码"
+               }
+        }
+        ,{
+            "path" : "pages/candy/candy",
+            "style" : {
+						"navigationBarTitleText": "糖果",
+						"app-plus":{
+							"scrollIndicator":"none",
+							"bounce":"none",
+							"titleNView":{
+								"buttons":[
+									 // 右边
+									 {
+										 "color":"#4F84FF",								 
+										 "colorPressed":"#BBBBBB",
+										 "float":"right",
+										 "fontSize":"14px",
+										 "text":"记录"
+									 }
+								]
+							}
+						}
+				}
+        }
+        ,{
+            "path" : "pages/jilu/jilu",
+            "style" : {
+				"navigationBarTitleText": "记录"
+			}
+        }
+    ],
+	"globalStyle": {
+		
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"backgroundColorTop": "#FFFFFF",
+		"backgroundColorBottom": "#FFFFFF",
+		"mp-alipay": {
+			"titleBarColor": "#FFFFFF"
+		}
+	},
+	"tabBar": {
+		"color": "#C5D0E4",
+		"selectedColor": "#4F84FF",
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabar/index.png",
+				"selectedIconPath": "static/tabar/index1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/property/property",
+				"iconPath": "static/tabar/property.png",
+				"selectedIconPath": "static/tabar/property1.png",
+				"text": "资产"
+			}, {
+				"pagePath": "pages/bill/bill",
+				"iconPath": "static/tabar/bill.png",
+				"selectedIconPath": "static/tabar/bill1.png",
+				"text": "账单"
+			}, {
+				"pagePath": "pages/candy/candy",
+				"iconPath": "static/tabar/lh.png",
+				"selectedIconPath": "static/tabar/lh1.png",
+				"text": "糖果"
+			}, {
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabar/my.png",
+				"selectedIconPath": "static/tabar/my1.png",
+				"text": "我的"
+			}
+		]
+	}
+}
